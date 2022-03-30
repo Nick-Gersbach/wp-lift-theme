@@ -440,6 +440,34 @@ footer {
   margin-top: 6rem;
 }
 
+.post-item a {
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.post-item a:hover {
+  color: #e1193e;
+  text-decoration: none;
+}
+
+.meta-box a {
+  color: #e1193e;
+}
+
+.generic-content a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #e1193e;
+  color: white;
+  padding: 12px;
+  transition: opacity 0.2s ease-in-out;
+}
+.generic-content a:hover {
+  background: #e1193e;
+  color: white;
+  opacity: 0.9;
+}
+
 .narrow-blog-posts-container {
   max-width: 800px;
   margin: auto;
@@ -451,6 +479,15 @@ footer {
   box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+}
+
+.pagination-links {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.pagination-links a {
+  color: #333;
 }
 
 /*============= Contact Page =============*/

@@ -4,8 +4,8 @@
     <?php if(has_post_thumbnail()):?>
     <img src="<?php the_post_thumbnail_url();?>" class="img-fluid post-featured-img d-block mx-auto mb-4">
     <?php endif;?>
-    <h1><?php the_title(); ?></h1>
-       <div class="meta-box">
+    <h1 class="text-center"><?php the_title(); ?></h1>
+       <div class="meta-box mt-3 text-center">
               <p>By: <?php the_author_posts_link(); ?> on <?php the_time('F-d-Y'); ?> <?php echo get_the_category_list(', ') ?></p>
           </div>
 
