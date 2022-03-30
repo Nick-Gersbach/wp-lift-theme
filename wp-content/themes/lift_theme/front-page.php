@@ -1,3 +1,4 @@
+<!-- 14:36 -->
 <?php get_header();?>
 
       <!-- Start Jumbotron -->
@@ -355,46 +356,35 @@
     <div class="blog-posts-wrapper bg-light">
       <h3 class="heading os-animation"  data-animation="animate__animated animate__fadeInUp"
         data-delay=".6s">Latest Blog Posts</h3>
-      <div class="heading-underline os-animation" data-animation="animate__animated animate__fadeInUp"
+         <div class="heading-underline os-animation" data-animation="animate__animated animate__fadeInUp"
         data-delay=".6s"></div>
-      <div class="container">
-      <div class="card-deck">
-      <div class="card os-animation" data-animation="animate__animated animate__fadeInUp"
+        <?php
+        $home_page_recent_posts = new WP_Query(array(
+          'posts_per_page' => 3,
+          'paged' => $paged,
+          'post_type' => 'post'
+        ));
+
+          while($home_page_recent_posts->have_posts()) {
+            $home_page_recent_posts->the_post(); ?>
+           <div class="container ">
+             <div class="card-deck">
+
+
+               <div class="card os-animation" data-animation="animate__animated animate__fadeInUp"
         data-delay=".4s">
-      <img src="<?php echo get_template_directory_uri().'/images/build-muscle-faster.jpg'; ?>"
-                   alt=""
-                    class="card-img-top rounded-0">
-        <div class="card-body">
-          <h5 class="card-title">5 Tips to Build Muscle Faster</h5>
-          <p class="card-text">Everyone wants to build muscle by doing more work, but what if there was a better way?</p>
-          <a href="#" class="btn read-more-btn"">Read More</a>
-        </div>
-      </div>
-      <div class="card os-animation" data-animation="animate__animated animate__fadeInUp"
-        data-delay=".4s">
-      <img src="<?php echo get_template_directory_uri().'/images/meal-prep.jpg'; ?>"
-                   alt=""
-                    class="card-img-top rounded-0">
-        <div class="card-body">
-          <h5 class="card-title">The Ultimate Meal Prep Guide</h5>
-          <p class="card-text">Diet is just as important as training. Learn how to set yourself up for success with meal prep.</p>
-          <a href="#" class="btn read-more-btn"">Read More</a>
-        </div>
-      </div>
-      <div class="card os-animation" data-animation="animate__animated animate__fadeInUp"
-        data-delay=".4s">
-      <img src="<?php echo get_template_directory_uri().'/images/chest-exercises.jpg'; ?>"
-                   alt=""
-                    class="card-img-top rounded-0">
-        <div class="card-body">
-          <h5 class="card-title">Top 10 Chest Exercises</h5>
-          <p class="card-text">Everyone guy wants a bigger chest, but is every guy doing the right exercises? No they aren't.</p>
-          <a href="#" class="btn read-more-btn">Read More</a>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
+              <img src="">
+                <div class="card-body">
+                  <h5 class="card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><?php ?></h5>
+                  <p class="card-text"><?php echo wp_trim_words(get_the_content(), 25); ?></p>
+                  <a href="<?php the_permalink(); ?>" class="btn read-more-btn"">Read More</a>
+                </div>
+              </div>
+        
+             </div>
+           </div>
+          <?php } wp_reset_postdata();
+        ?>
     <!-- End Blog Posts Section -->
 
     <!-- Start Members Section -->

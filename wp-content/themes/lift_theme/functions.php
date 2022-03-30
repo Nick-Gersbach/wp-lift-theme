@@ -73,4 +73,10 @@ Add Theme Functionaility
 
 */
 
+// Add Thumbnails
+add_theme_support('post-thumbnails');
 
+//Add Image Sizes (Name, Height, Width, Hard Crop or Not (true or false)
+add_image_size('blog-large', 800, 400,  true);
+add_image_size('blog-medium', 500, 300,  true);
+add_image_size('blog-small', 300, 200,  true);

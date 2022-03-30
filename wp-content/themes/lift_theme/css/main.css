@@ -67,6 +67,7 @@ body {
 .nav-cta a {
   text-align: center;
   padding-left: 5px;
+  padding-bottom: 3px;
 }
 
 a.nav-cta:hover {
@@ -444,6 +445,12 @@ footer {
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
+}
+
+.post-featured-img {
+  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
 }
 
 /*============= Contact Page =============*/
