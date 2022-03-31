@@ -506,7 +506,29 @@ footer {
 /*============= Widget Sidebar =============*/
 
 #widget-sidebar {
-  background: #e9ecef;
+  background: #fff;
+}
+
+#searchform {
+  margin-bottom: 2rem;
+}
+
+#searchform input {
+  padding: 10px;
+}
+
+input#searchsubmit {
+  background: #e1193e;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.widget h4 {
+  background: #222;
+  color: white;
+  padding: 8px 0px 8px 10px;
+  margin-bottom: 1rem;
 }
 
 #widget-sidebar li {
@@ -514,6 +536,7 @@ footer {
 }
 .widget {
   margin-bottom: 4rem;
+  border-bottom: 1px solid #e9ecef;
 }
 
 /*============= Contact Page =============*/

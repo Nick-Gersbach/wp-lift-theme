@@ -100,8 +100,8 @@ register_sidebar(
     array(
         'name' => 'Blog Sidebar',
         'id' => 'blog-sidebar',
-        'before_title' => '',
-        'after_title' =>  ''
+        'before_title' => '<h4>',
+        'after_title' =>  '</h4>'
     )
 );
 
