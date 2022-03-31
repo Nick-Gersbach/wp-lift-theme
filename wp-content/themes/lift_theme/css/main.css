@@ -372,6 +372,7 @@ ul.social li a:hover {
   color: white;
   opacity: 0.9;
 }
+
 /*============= CLIENTS SECTION =============*/
 
 #clients {
@@ -738,6 +739,23 @@ input#searchsubmit {
     opacity: 0.9;
     text-decoration: none;
   }
+
+  .post-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post-item h2,
+  .meta-box {
+    text-align: center;
+  }
+
+  .generic-content p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
 }
 
 /* Devices under 768px (md) */
@@ -809,6 +827,16 @@ input#searchsubmit {
 
   .bg-cta-text h2 {
     width: 80%;
+  }
+
+  .post-item h2,
+  .meta-box {
+    text-align: left;
+  }
+
+  .generic-content p {
+    width: 100%;
+    text-align: left;
   }
 }
 

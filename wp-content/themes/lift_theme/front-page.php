@@ -371,7 +371,7 @@
              <div class="card-deck">
 
 
-               <div class="card os-animation" data-animation="animate__animated animate__fadeInUp"
+               <div class="card os-animation front-page-blog-post-card" data-animation="animate__animated animate__fadeInUp"
         data-delay=".4s">
               <img src="">
                 <div class="card-body">

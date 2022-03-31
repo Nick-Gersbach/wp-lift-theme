@@ -1,4 +1,3 @@
-<!-- 11:24 Blog Listing Page -->
 <?php
 get_header('blog');
 ?>
