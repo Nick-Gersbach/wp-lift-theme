@@ -136,7 +136,7 @@
 
     <!-- Start Pricing Section -->
     <div id="pricing" class="offset">
-      <div class="jumbotron mb-0">
+      <div class="jumbotron mb-0" style="background: #f8f9fa;">
         <div class="container py-2">
           <div
             class="os-animation"

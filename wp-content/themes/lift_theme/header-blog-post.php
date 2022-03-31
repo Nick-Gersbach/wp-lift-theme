@@ -67,31 +67,7 @@
       </div>
       <!-- End Landing Page Image -->
 
-      <!-- Start Landing Page Caption -->
-      <div class="caption text-center text-light text-uppercase">
-        <h1
-          class="font-weight-bold os-animation"
-          data-animation="animate__animated animate__fadeInUp"
-          data-delay=".6s"
-        >
-
-        </h1>
-        <h3
-          class="os-animation"
-          data-animation="animate__animated animate__fadeInUp"
-          data-delay=".8s"
-        >
-        
-        </h3>
-        <a
-          href="#features"
-          class="btn btn-outline-light btn-lg rounded-0 os-animation"
-          data-animation="animate__animated animate__fadeInUp"
-          data-delay="1s"
-          ></a
-        >
-      </div>
-      <!-- End Landing Page Caption -->
+     
     </div>
     <!-- End Home Section -->
 

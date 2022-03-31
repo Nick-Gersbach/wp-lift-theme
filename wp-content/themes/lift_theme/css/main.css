@@ -234,7 +234,7 @@ h3.heading {
 /*============= PRICING SECTION =============*/
 
 .pricing-column {
-  background-color: white;
+  background-color: #f8f9fa !important;
   height: 100%;
   padding: 1.6rem;
   border-top: 0.25rem solid #e1193e;
@@ -374,9 +374,14 @@ ul.social li a:hover {
 }
 /*============= CLIENTS SECTION =============*/
 
+#clients {
+  background: white;
+}
+
 #clients-carousel {
   max-width: 1200px;
   margin: 0 auto;
+  background: white;
 }
 .clients img {
   border-radius: 50%;
