@@ -100,11 +100,19 @@ register_sidebar(
     array(
         'name' => 'Blog Sidebar',
         'id' => 'blog-sidebar',
-        'before_title' => '<h3>widget-title',
-        'after_title' =>  '</h3>'
+        'before_title' => '',
+        'after_title' =>  ''
     )
 );
 
 }
 
 add_action('widgets_init', 'my_sidebars');
+
+// Filter except length to 35 words.
+// tn custom excerpt length
+function tn_custom_excerpt_length( $length ) {
+return 35;
+}
+add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
+

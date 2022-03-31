@@ -441,8 +441,12 @@ footer {
 }
 
 /*============= Blog =============*/
-.blog-page-wrapper {
-  margin-top: 6rem;
+.blog-page-container {
+  margin-top: 8rem;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
 .post-item a {
@@ -457,6 +461,10 @@ footer {
 
 .meta-box a {
   color: #e1193e;
+}
+
+.generic-content p {
+  width: 80%;
 }
 
 .generic-content a {
@@ -493,6 +501,19 @@ footer {
 
 .pagination-links a {
   color: #333;
+}
+
+/*============= Widget Sidebar =============*/
+
+#widget-sidebar {
+  background: #e9ecef;
+}
+
+#widget-sidebar li {
+  list-style: none;
+}
+.widget {
+  margin-bottom: 4rem;
 }
 
 /*============= Contact Page =============*/
