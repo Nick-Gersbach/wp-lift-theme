@@ -2,7 +2,13 @@
 <?php
 get_header('blog');
 ?>
-<div class="blog-page-wrapper">
+<div class="blog-page-wrapper row">
+    <div class="col-lg-3 order-2">
+  <?php if(is_active_sidebar('blog-sidebar')): ?>
+    <?php dynamic_sidebar('blog-sidebar'); ?>
+  <?php endif;?>
+  </div>
+  <div class="col-lg-9 order-1">
   <div class="narrow-blog-posts-container">
     <!-- Output Blog Posts Dynamically -->
     <?php
@@ -23,12 +29,10 @@ get_header('blog');
             <p><a href="<?php echo the_permalink(); ?>">Continue Reading &raquo;</a></p>
           </div>
       </div>
+      </div>
       <?php
     }
-    //echo paginate_links();
     ?>
-
-    
   </div>
 </div>
 
