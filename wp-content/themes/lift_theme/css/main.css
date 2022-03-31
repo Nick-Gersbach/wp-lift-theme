@@ -67,7 +67,7 @@ body {
 .nav-cta a {
   text-align: center;
   padding-left: 5px;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 a.nav-cta:hover {
@@ -837,6 +837,10 @@ input#searchsubmit {
   .generic-content p {
     width: 100%;
     text-align: left;
+  }
+
+  .blog-header-caption {
+    padding: 0 1rem;
   }
 }
 

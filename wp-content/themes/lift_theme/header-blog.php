@@ -77,7 +77,7 @@
         Blog
         </h1>
         <p
-          class="os-animation"
+          class="os-animation blog-header-caption"
           data-animation="animate__animated animate__fadeInUp"
           data-delay=".8s"
         >

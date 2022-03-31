@@ -385,6 +385,7 @@
            </div>
           <?php } wp_reset_postdata();
         ?>
+    </div>
     <!-- End Blog Posts Section -->
 
     <!-- Start Members Section -->
